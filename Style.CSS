@@ -1,0 +1,777 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color:#ffff;
+    overflow-x:hidden;
+}
+
+/*----NAVBAR---- */
+.Hero-Navbar{
+    height:65px;
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    display:flex;
+    align-items:center;
+    justify-content:space-between; 
+}
+
+.Left-Nav{
+    height:70px;
+    width:15%;
+    display:flex;
+    margin-left:-5;
+    align-items:center;
+    justify-content:center;
+}
+
+.Left-Nav .Logo{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000000;
+}
+
+.Center-Nav{
+    height:70px;
+    width:33vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.Center-Nav .Nav-Links{
+    text-decoration:none;
+    color:#000000;
+    font-weight:540;
+    font-size:1.3vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Right-Nav{
+    height:60px;
+    width:20%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    margin-right:20px;
+}
+
+.Right-Nav a{
+    text-decoration:none;
+    height:60px;
+    width:4vw;
+    background-color:rgba(255, 255, 255,0.2);
+    text-align:center;
+    border-radius:50%;
+    transition:all 0.5s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}  
+
+.Right-Nav a:hover{
+    background-color:rgb(62, 111, 216);
+    border-color:rgb(0, 0, 0);
+}
+
+.Drop-Down-Menu{
+    height:5vh;
+    width:8vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:20px;
+    display:none;
+}
+
+/* section 1 */
+/* ----- HERO SECTION----- */
+.Hero-Section{
+    height:100vh;
+    max-width:100%;
+    background-image:linear-gradient(to right, #000, #00000000),
+    url("Images/scania-trucks-on-highway-4dxga1joqd9kbzo2.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    background-attachment:fixed;
+}
+
+
+.Hero-Section .Title{
+    font-size:4vw;
+    color:#ffff;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform:capitalize;font-weight:450;
+}
+
+.Tag-Line{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#ffff;
+    font-size:1.5vw;
+    font-weight:400;
+}
+
+.Input-Box{
+    height:9vh;
+    width:35%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    outline:none;
+} 
+
+input{
+    height:6vh;
+    width:80%;
+    border:none;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+    padding-left:10px;
+    font-size:15px;
+}
+
+.Button{
+    height:6vh;
+    background-color:rgb(62, 111, 216);
+    width:20%;
+    border:none;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    cursor:pointer;
+}
+
+/* section 2 */
+/*------ SHOW NEW MODEL SECOND SECTION----- */
+.Model-Outer-Container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.Model-Outer-Container h1{
+    font-size:3rem;
+    font-weight:700;
+    padding-top:30px;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Model-Inner-Container{
+    height:70%;
+    width:90%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px,1fr));
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:20px;
+    margin-top:30px;
+}
+
+.Model-Info{
+    background-color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.Model-Info h2{
+    font-size:2.5vw;
+    text-transform:capitalize;
+    font-weight:500;
+    text-align:center;
+    padding-top:15px;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Model-Info .Model-Infomation{
+    padding:35px;
+    font-size:1.5vw;
+    font-weight:400;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Model-Info .Explore-Btn{
+    height:45px;
+    width:40%;
+    background-color:rgb(62, 111, 216);
+    margin-top:7px;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    border:none;
+    outline:none;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+    cursor:pointer;
+    transition:all 0.6s ease;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Model-Info .Explore-Btn:hover{
+    background-color:#000;
+    color:#fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-color:rgb(158, 26, 26);
+}
+
+.Model-Info .Explore-Btn i{
+    padding-left:10px;
+    
+}
+
+.Model-Info h2::before{
+    content:'Check';
+    color:rgb(134, 19, 19);
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Model-Image{
+    background-image:linear-gradient(to left, #00000004, #000),
+    url("Images/Model\ info\ image.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:calc();
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+/* section 3 */
+/* ----VOLVO TRUKS GROUP SECTION--- */
+.Truck-Group{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.Truck-Group h1{
+    font-size:3rem;
+    font-weight:700;
+    padding-top:30px;
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:30px;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Truck-Group .Group-Info{
+    padding:35px;
+    font-size:1.5vw;
+    font-weight:400;
+    text-align:center;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Truck-Group-Container{
+    height:54vh;
+    width:90%;
+    background-image:linear-gradient(to left, #00000000, #000000c9),
+    url("Images/Product_line_up2.png");
+    background-size:cover;
+    background-position:center;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+
+/* section 4 */
+/* ---EXPLORE CONTAINER-- */
+.Explore-Container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.Explore-Container h1{
+    font-size:3rem;
+    font-weight:700;
+    padding-top:30px;
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:30px;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Explore-Title{
+    padding:35px;
+    font-size:1.5vw;
+    font-weight:400;
+    text-align:center;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Explore-Image{
+    height:60%;
+    width:90%;
+    background-image:url("Images/ARK-Invest_Blog-Banner_2017_11_08-EV-Semi-Truck-1920x580.png");
+    background-position:center;
+    background-size:cover;
+    align-items:center;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Explore-Image h3{
+    font-size:60px;
+    font-size:500;
+    text-transform:uppercase;
+    line-height:60px;
+    color:#fff;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Explore-Image .Selected-Btn{
+    height:15%;
+    width:20VW;
+    font-size:20px;
+    font-weight:500;
+    background-color:rgb(62, 111, 216);
+    color:#fff;
+    margin-top:15px;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    outline:none;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+    cursor:pointer;
+}
+
+.Explore-Btn i{
+    color:#ffff;
+    padding-left:10px;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+
+/* /* section 5 */
+/*----SHOW TOP MODEL---- */
+.Truck-Price-Section{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:35px; 
+}
+  
+.Truck-Price-List{
+    height:655px;
+    width:800px;
+    background-image:url("Images/Volvo-FMX-520-26.1Cu-copy.jpg");
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:flex-end;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Truck-Price-List a{
+    text-decoration:none;
+    color:#812c05;
+    font-size:38px;
+    font-weight:700;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Truck-Price-List a:hover{
+   color:rgb(47, 172, 47);
+}
+
+
+/* -------TRUCK MODEL AND PRICE CONTAINER------- */
+.Volvo-Truck-List{
+    height:auto;
+    width:100%;
+    padding:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.Volvo-Truck-Grid{
+    height:auto;
+    width:95%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px,1fr));
+    justify-content:center;
+    gap:2rem;
+}
+
+.Image-Card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+.Image-Card img{
+    height:70%;
+    width:100%;
+    justify-content:center;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+
+.Image-Card a{
+    text-decoration:none;
+    color:rgb(30, 112, 189);
+    font-size:20px;
+    font-weight:600;
+    padding-top:7px;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Price-Tag{
+    font-size:19px;
+    padding-top:7px;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+}
+
+.Offers-Btn{
+    height:45px;
+    width:40%;
+    background-color:rgb(62, 111, 216);
+    margin-top:7px;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    border:none;
+    outline:none;
+    animation:autoShowAnimation both;
+    animation-timeline:view(60% 30%);
+    cursor:pointer;
+}
+
+/* section 6 */
+/* COMPANY SLIDER LOGO */
+.Slider-Container{
+    height:250px;
+    margin:auto;
+    position:relative;
+    width:90%;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+}
+
+.Slide-Container{
+    display:flex;
+    width:calc(250px * 18);
+    cursor:pointer;
+    animation:scroll 40s  linear infinite;
+}
+
+/* SCROLL LOGO ANIMATION */
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(calc(-250px * 9)); 
+    }
+} 
+
+.Slide-Treack{
+    height:200px;
+    width:250px;
+    display:flex;
+    align-items:center;
+    padding:15px;
+    perspective:100px;
+}
+
+img{
+    width:100%;
+    transition:transform 1s;
+}
+
+ img:hover{
+    transform:translatez(20px);
+}
+
+.Slide-Container::before{
+    left:0;
+    top:0;
+}
+
+.Slide-Container::after{
+   right:0;
+   top:0;
+   transform:rotateZ(180deg);
+}
+
+
+/* section 7 */
+/* ----FOOTER---- */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-left h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.footer-nav, .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social a i{
+    height:50px;
+    width:50px;
+    background-color:#cfdb24;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer-nav a, .footer-social a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover, .footer-social a:hover {
+    color: gray;
+}
+
+
+
+
+/* SHOW AUTO ANIMATION */
+@keyframes autoShowAnimation{
+    from{
+        opacity:0;
+        transform:translateY(200px) scale(0.3);
+    } to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+
+
+
+/* RESPONSIVE */
+/* RESPONSIVE NAVBAR */
+@media(max-width:768px){
+    .Left-Nav .Logo{
+        padding-left:35px;
+    }
+
+    .Center-Nav{
+        display:none;
+    }
+
+    .Right-Nav{
+        display:none;
+    }
+
+   .Drop-Down-Menu{
+    display:block;
+   }
+}
+
+/* HERO SECTION */
+@media (max-width: 768px) {
+    .Hero-Section{
+        background-image:100%;
+    }
+    .Hero-Section .Title{
+        font-size:30px;
+        text-align:center;
+        justify-content:center;
+    }
+    .Tag-Line{
+        display:none;
+    }
+    .Input-Box {
+        width:90%;
+    }
+    .input{
+        width:70%;
+    }
+    .Button{
+        max-width:20%;
+    }
+}
+
+
+/*------ SHOW NEW MODEL SECOND SECTION----- */
+@media(max-width:768px){
+    .Model-Outer-Container h1{
+        font-size:30px;
+        text-align:center;
+    }
+
+    .Model-Info h2{
+        font-size:20px;
+        text-align:center;
+        justify-content:center;
+    } 
+    .Model-Info .Model-Infomation{
+        font-size:15px;
+        text-align:center;
+        justify-content:center;
+    }
+    .Model-Info .Explore-Btn{
+        width:50%;
+        justify-content:center;
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+/* ----VOLVO TRUKS GROUP SECTION--- */
+@media(max-width:768px){
+    .Truck-Group h1{
+        font-size:30px;
+        text-align:center;
+    }
+
+    .Truck-Group .Group-Info{
+        font-size:15px;
+        text-align:center;
+        justify-content:center;
+    }
+
+}
+
+/* EXPLORE CONTAINER */
+@media(max-width:768px){
+    .Explore-Container h1{
+        font-size:30px;
+        text-align:center;
+    }
+
+    .Explore-Title{
+        font-size:15px;
+        text-align:center;
+        justify-content:center;
+    }
+
+    .Explore-Image .Selected-Btn{
+        width:60%;
+    }
+}
+
+/* Footer */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    .Hero-Section{
+        background-position:center;
+        height:100vh;
+        width:100%;
+    }
+
+    input{
+       width:100vw;
+    }
+} 
